@@ -1,4 +1,5 @@
-import './globals.css';
+import 'shared/styles/reset.css';
+import 'shared/styles/globals.css';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,7 +15,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="ru">
+		<html lang="ru" className="dark-theme">
 			<body className={inter.className}>{children}</body>
 		</html>
 	);

@@ -1,0 +1,73 @@
+/* :root {
+	--primary-bg-color: hsl(206deg 30.0% 98.8%);
+	--secondary-bg-color: hsl(210deg 16.7% 97.6%);
+	--primary-color: hsl(209deg 100% 96.5%);
+	--primary-color-hover: hsl(210deg 98.8% 94.0%);
+	--primary-color-active: hsl(209deg 95.0% 90.1%);
+	--primary-color-disabled: hsl(210, 100%, 98.0%);
+	--border-primary-color: hsl(208deg 77.5% 76.9%);
+	--border-primary-color-hover: hsl(206deg 81.9% 65.3%);
+	--border-primary-color-not-interactive: hsl(209deg 81.2% 84.5%);
+	--text-color-low-contrast: hsl(206deg 6.0% 43.5%);
+	--text-color-high-contrast: hsl(206deg 24.0% 9.0%);
+}
+
+.dark-theme {
+	--primary-bg-color: hsl(200deg 7.0% 8.8%);
+	--secondary-bg-color: hsl(195deg 7.1% 11.0%);
+	--primary-color: hsl(214deg 59.4% 15.3%);
+	--primary-color-hover: hsl(214deg 65.8% 17.9%);
+	--primary-color-active: hsl(213deg 71.2% 20.2%);
+	--primary-color-disabled: hsl(216, 50.0%, 11.8%);
+	--border-primary-color: hsl(211deg 85.1% 27.4%);
+	--border-primary-color-hover: hsl(211deg 89.7% 34.1%);
+	--border-primary-color-not-interactive: hsl(212deg 77.4% 23.1%);
+	--text-color-low-contrast: hsl(206deg 6.0% 63.0%);
+	--text-color-high-contrast: hsl(210deg 6.0% 93.0%);
+} */
+
+:root {
+	/* Radix slate */
+	--primary-bg-color: hsl(206deg 30% 98.8%);
+	--secondary-bg-color: hsl(210deg 16.7% 97.6%);
+
+	/* TW blue  */
+	--primary-color: hsl(212deg 96% 78%);
+	--primary-color-hover: hsl(213deg 94% 68%);
+	--primary-color-active: hsl(217deg 91% 60%);
+	--primary-color-disabled: hsl(213deg 97% 87%);
+
+	/* TW indigo  */
+	--border-primary-color: hsl(230deg 94% 82%);
+	--border-primary-color-hover: hsl(234deg 89% 74%);
+	--border-primary-color-not-interactive: hsl(239deg 84% 67%);
+
+	/* Radix slate */
+	--text-color-low-contrast: hsl(206deg 6% 43.5%);
+	--text-color-high-contrast: hsl(206deg 24% 9%);
+}
+
+.dark-theme {
+	/* Radix slate */
+	--primary-bg-color: hsl(200deg 7% 8.8%);
+	--secondary-bg-color: hsl(195deg 7.1% 11%);
+
+	/* TW blue  */
+	--primary-color: hsl(224deg 76% 48%);
+	--primary-color-hover: hsl(226deg 71% 40%);
+	--primary-color-active: hsl(224deg 64% 33%);
+	--primary-color-disabled: hsl(226deg 57% 21%);
+
+	/* TW indigo  */
+	--border-primary-color: hsl(244deg 55% 41%);
+	--border-primary-color-hover: hsl(242deg 47% 34%);
+	--border-primary-color-not-interactive: hsl(244deg 47% 20%);
+
+	/* Radix slate */
+	--text-color-low-contrast: hsl(206deg 6% 63%);
+	--text-color-high-contrast: hsl(210deg 6% 93%);
+}
+
+body {
+	background-color: var(--primary-bg-color);
+}
