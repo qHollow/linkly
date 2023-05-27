@@ -1,0 +1,46 @@
+.root {
+}
+
+.base {
+	font-weight: 700;
+}
+
+.h1 {
+	font-size: 4rem;
+	line-height: 80px;
+}
+
+.h2 {
+	font-size: 3rem;
+	line-height: 64px;
+}
+
+.h3 {
+	font-size: 2rem;
+	line-height: 48px;
+}
+
+.h4 {
+	font-size: 1.5rem;
+	line-height: 36px;
+}
+
+.h5 {
+	font-size: 1.25rem;
+	line-height: 30px;
+}
+
+.h6 {
+	font-size: 1.125rem;
+	line-height: 28px;
+}
+
+.p {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.span {
+	font-weight: 400;
+	font-size: 1rem;
+}
