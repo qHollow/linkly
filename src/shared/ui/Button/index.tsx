@@ -1,12 +1,13 @@
 import clsx from 'clsx';
 import style from './style.module.css';
+import { ButtonHTMLAttributes } from 'react';
 
 export enum ButtonVariants {
 	primary = 'primary',
 	secondary = 'secondary',
 }
 
-interface Props {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 	/**
 	 * Applies on root element
 	 */
@@ -40,15 +41,18 @@ export const Button = ({
 	isLoading = false,
 	isDisabled = false,
 	onPress,
+	...props
 }: Props) => {
 	return (
 		<button
-			onClick={onPress}
 			className={clsx(className, style.root, style.base, {
 				[style.primary]: variant == ButtonVariants.primary,
 				[style.secondary]: variant == ButtonVariants.secondary,
 				[style.disabled]: isDisabled,
 			})}
+			onClick={onPress}
+			disabled={isDisabled}
+			{...props}
 		>
 			{label}
 		</button>

@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import styles from './style.module.css';
-import { useId } from 'react';
+import { InputHTMLAttributes, useId } from 'react';
 
-interface Props {
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
 	/**
 	 * Applies on root element
 	 */
@@ -21,7 +21,13 @@ interface Props {
 	error?: React.ReactNode;
 }
 
-export const Input = ({ className, label, isDisabled, error }: Props) => {
+export const Input = ({
+	className,
+	label,
+	isDisabled,
+	error,
+	...props
+}: Props) => {
 	const id = useId();
 	return (
 		<>
@@ -37,6 +43,7 @@ export const Input = ({ className, label, isDisabled, error }: Props) => {
 				})}
 				disabled={isDisabled}
 				id={id}
+				{...props}
 			/>
 			{!!error && <span className={styles.error}>{error}</span>}
 		</>
