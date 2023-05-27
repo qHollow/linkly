@@ -37,10 +37,19 @@
 	--primary-color-active: hsl(217deg 91% 60%);
 	--primary-color-disabled: hsl(213deg 97% 87%);
 
+	/* TW Blue */
+	--input-primary-color: hsl(214deg 95% 93%);
+	--input-primary-color-disabled: hsl(214deg 95% 93%);
+
 	/* TW indigo  */
 	--border-primary-color: hsl(230deg 94% 82%);
 	--border-primary-color-hover: hsl(234deg 89% 74%);
 	--border-primary-color-not-interactive: hsl(239deg 84% 67%);
+
+	/* TBD */
+	--warning-color: hsl(53deg 92.0% 50.0%);
+	--success-color: hsl(151deg 55.0% 41.5%);
+	--error-color: hsl(358deg 75.0% 59.0%);;
 
 	/* Radix slate */
 	--text-color-low-contrast: hsl(206deg 6% 43.5%);
@@ -58,10 +67,19 @@
 	--primary-color-active: hsl(224deg 64% 33%);
 	--primary-color-disabled: hsl(226deg 57% 21%);
 
+	/* TW Blue */
+	--input-primary-color: hsl(244deg 47% 20%);
+	--input-primary-color-disabled: hsl(244deg 47% 20%);
+
 	/* TW indigo  */
-	--border-primary-color: hsl(244deg 55% 41%);
-	--border-primary-color-hover: hsl(242deg 47% 34%);
+	--border-primary-color: hsl(242deg 47% 34%);
+	--border-primary-color-hover: hsl(244deg 55% 41%);
 	--border-primary-color-not-interactive: hsl(244deg 47% 20%);
+
+	/* TBD */
+	--warning-color: hsl(53deg 92.0% 50.0%);
+	--success-color: hsl(151deg 55.0% 41.5%);
+	--error-color: hsl(358deg 75.0% 59.0%);
 
 	/* Radix slate */
 	--text-color-low-contrast: hsl(206deg 6% 63%);
