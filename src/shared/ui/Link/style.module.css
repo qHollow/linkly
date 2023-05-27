@@ -1,0 +1,23 @@
+.root {
+}
+
+.base {
+	display: inline-flex;
+	gap: 4px;
+	align-items: center;
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: color 0.25s ease-in-out;
+}
+
+.base:hover {
+	color: var(--primary-color-hover);
+}
+
+.base:active {
+	color: var(--primary-color-active)
+}
+
+.icon {
+	display: inline;
+}
