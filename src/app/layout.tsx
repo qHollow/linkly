@@ -1,6 +1,7 @@
 import 'shared/styles/reset.css';
 import 'shared/styles/globals.css';
 import { Inter } from 'next/font/google';
+import { Header } from 'shared/ui/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="ru" className="dark-theme">
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }
