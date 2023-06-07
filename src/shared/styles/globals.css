@@ -47,9 +47,9 @@
 	--border-primary-color-not-interactive: hsl(239deg 84% 67%);
 
 	/* TBD */
-	--warning-color: hsl(53deg 92.0% 50.0%);
-	--success-color: hsl(151deg 55.0% 41.5%);
-	--error-color: hsl(358deg 75.0% 59.0%);;
+	--warning-color: hsl(53deg 92% 50%);
+	--success-color: hsl(151deg 55% 41.5%);
+	--error-color: hsl(358deg 75% 59%);
 
 	/* Radix slate */
 	--text-color-low-contrast: hsl(206deg 6% 43.5%);
@@ -77,9 +77,9 @@
 	--border-primary-color-not-interactive: hsl(244deg 47% 20%);
 
 	/* TBD */
-	--warning-color: hsl(53deg 92.0% 50.0%);
-	--success-color: hsl(151deg 55.0% 41.5%);
-	--error-color: hsl(358deg 75.0% 59.0%);
+	--warning-color: hsl(53deg 92% 50%);
+	--success-color: hsl(151deg 55% 41.5%);
+	--error-color: hsl(358deg 75% 59%);
 
 	/* Radix slate */
 	--text-color-low-contrast: hsl(206deg 6% 63%);
@@ -88,4 +88,19 @@
 
 body {
 	background-color: var(--primary-bg-color);
+}
+
+.srOnly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border: none;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
 }
