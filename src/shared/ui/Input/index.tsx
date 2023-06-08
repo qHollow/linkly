@@ -1,6 +1,6 @@
+import { type InputHTMLAttributes, useId } from 'react';
 import clsx from 'clsx';
 import styles from './style.module.css';
-import { InputHTMLAttributes, useId } from 'react';
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
 	/**
@@ -30,7 +30,7 @@ export const Input = ({
 }: Props) => {
 	const id = useId();
 	return (
-		<>
+		<div className={styles.container}>
 			{!!label && (
 				<label className={styles.label} htmlFor={id}>
 					{label}
@@ -46,6 +46,6 @@ export const Input = ({
 				{...props}
 			/>
 			{!!error && <span className={styles.error}>{error}</span>}
-		</>
+		</div>
 	);
 };

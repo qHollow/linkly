@@ -87,6 +87,7 @@
 }
 
 body {
+	color: var(--text-color-high-contrast);
 	background-color: var(--primary-bg-color);
 }
 
