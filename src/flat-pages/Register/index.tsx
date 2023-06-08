@@ -7,22 +7,28 @@ import { Link } from 'shared/ui/Link';
 export const RegisterFlatPage = () => {
 	return (
 		<main className={style.main}>
-			<Typography as={TypographyElement.h1}>Регистрация</Typography>
-			<Button label='Зарегистрироваться через Google' variant={ButtonVariants.primary} className={style.googleAuthButton} />
-			<Typography as={TypographyElement.h4}>или</Typography>
-			<form action="#" className={style.form}>
-				<Input label="Почта" type="email" inputMode="email" />
-				<Input label="Пароль" type="password" inputMode="text" />
-				<Input label="Повторите пароль" type="password" inputMode="text" />
+			<div className={style.container}>
+				<Typography as={TypographyElement.h1}>Регистрация</Typography>
 				<Button
+					label="Зарегистрироваться через Google"
 					variant={ButtonVariants.primary}
-					type="submit"
-					label="Зарегистрироваться"
+					className={style.googleAuthButton}
 				/>
-			</form>
-			<div>
-				<Typography as={TypographyElement.h4}>Уже есть аккаунт?</Typography>
-				<Link href="/login">Войти</Link>
+				<Typography as={TypographyElement.h4}>или</Typography>
+				<form action="#" className={style.form}>
+					<Input label="Почта" type="email" inputMode="email" />
+					<Input label="Пароль" type="password" inputMode="text" />
+					<Input label="Повторите пароль" type="password" inputMode="text" />
+					<Button
+						variant={ButtonVariants.primary}
+						type="submit"
+						label="Зарегистрироваться"
+					/>
+				</form>
+				<div className={style.loginInfo}>
+					<Typography as={TypographyElement.h4}>Уже есть аккаунт?</Typography>
+					<Link href="/login">Войти</Link>
+				</div>
 			</div>
 		</main>
 	);
