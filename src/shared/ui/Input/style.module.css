@@ -1,4 +1,21 @@
 .root {
+	--color-input: var(--color-text-primary);
+	--color-input-background: var(--oc-gray-2);
+	--color-input-background-disabled: var(--oc-gray-1);
+	--color-input-border: var(--oc-gray-4);
+	--color-input-border-hover: var(--oc-gray-6);
+	--color-input-border-disabled: var(--oc-gray-3);
+	--color-input-error: var(--oc-red-6);
+	--color-input-border-error: var(--oc-red-4);
+}
+
+[data-theme='dark'] .root {
+	--color-input-background: var(--oc-gray-7);
+	--color-input-background-disabled: var(--oc-gray-8);
+	--color-input-border: var(--oc-gray-6);
+	--color-input-border-hover: var(--oc-gray-4);
+	--color-input-border-disabled: var(--oc-gray-5);
+	--color-input-error: var(--oc-red-5);
 }
 
 .container {
@@ -8,39 +25,41 @@
 .base {
 	display: block;
 	width: 100%;
-	padding: 8px;
-	color: var(--text-color-high-contrast);
-	background-color: var(--input-primary-color);
-	border: 2px solid var(--border-primary-color);
-	border-radius: 8px;
+	padding: var(--size-4);
+	color: var(--color-input);
+	background-color: var(--color-input-background);
+	border: 2px solid var(--color-input-border);
+	border-radius: var(--size-4);
 	outline: none;
 	transition: border-color 0.2s ease-in-out;
 }
 
 .base:focus-within {
-	border-color: var(--border-primary-color-hover);
+	border-color: var(--color-input-border-hover);
 }
 
-.disabled {
-	background-color: var(--input-primary-color-disabled);
+.disabled,
+.disabled:focus-within {
+	background-color: var(--color-input-background-disabled);
+	border-color: var(--color-input-border-disabled);
 }
 
 .label {
 	display: inline-block;
-	margin-bottom: 8px;
+	margin-bottom: var(--size-4);
 	font-size: 18px;
 }
 
 .error {
 	display: inline-block;
-	margin-top: 4px;
-	color: var(--error-color);
+	margin-top: var(--size-3);
+	color: var(--color-input-error);
 }
 
 .inputError {
-	border-color: var(--error-color);
+	border-color: var(--color-input-border-error);
 }
 
 .inputError:focus-within {
-	border-color: var(--error-color);
+	border-color: var(--color-input-border-error);
 }

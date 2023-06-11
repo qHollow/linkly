@@ -30,14 +30,14 @@ export const Input = ({
 }: Props) => {
 	const id = useId();
 	return (
-		<div className={styles.container}>
+		<div className={clsx(className, styles.root, styles.container)}>
 			{!!label && (
 				<label className={styles.label} htmlFor={id}>
 					{label}
 				</label>
 			)}
 			<input
-				className={clsx(className, styles.root, styles.base, {
+				className={clsx(styles.base, {
 					[styles.inputError]: !!error,
 					[styles.disabled]: isDisabled,
 				})}
