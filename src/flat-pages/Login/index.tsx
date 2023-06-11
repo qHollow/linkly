@@ -21,7 +21,7 @@ export const LoginFlatPage = () => {
 					/>
 				</form>
 				<div className={style.registerInfo}>
-					<Typography as={TypographyElement.h4}>
+					<Typography as={TypographyElement.p} className={style.registerInfoTitle}>
 						Ещё не зарегистрированы?
 					</Typography>
 					<Link href="/register">Регистрация</Link>
