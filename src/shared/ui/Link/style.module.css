@@ -1,21 +1,26 @@
 .root {
+	--color-link: var(--color-text-primary);
+	--color-link-hover: var(--oc-blue-4);
+}
+
+[data-theme="dark"] .root {
+	--color-link-hover: var(--oc-blue-3);
 }
 
 .base {
 	display: inline-flex;
-	gap: 4px;
+	gap: var(--size-3);
 	align-items: center;
-	color: var(--primary-color);
-	text-decoration: none;
+	color: var(--color-link);
+	text-decoration: underline;
+	text-decoration-color: var(--oc-blue-6);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
 	transition: color 0.25s ease-in-out;
 }
 
 .base:hover {
-	color: var(--primary-color-hover);
-}
-
-.base:active {
-	color: var(--primary-color-active)
+	color: var(--color-link-hover);
 }
 
 .icon {
