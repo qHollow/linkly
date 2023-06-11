@@ -22,7 +22,7 @@ export const Navigation = ({ links }: Props) => {
 
 	return (
 		<nav>
-			<ul className={style.navList}>
+			<ul className={clsx(style.root, style.navList)}>
 				{links.map(({ href, name }: Link) => (
 					<li key={name} className={style.navListItem}>
 						<Link
