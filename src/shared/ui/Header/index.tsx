@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Navigation } from './ui/Navigation';
 import style from './style.module.css';
+import { clsx } from 'clsx';
 
 const NAV_LINKS = [
 	{
@@ -19,7 +20,7 @@ const NAV_LINKS = [
 
 export const Header = () => {
 	return (
-		<header className={style.header}>
+		<header className={clsx(style.root, style.header)}>
 			<Link href="/" className={style.logo}>
 				Linkly
 			</Link>

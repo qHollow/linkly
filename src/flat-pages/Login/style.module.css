@@ -28,3 +28,8 @@
 .registerInfo {
 	align-self: flex-start;
 }
+
+/* Hack for up Selector Specificity */
+:not(:disabled).registerInfoTitle {
+	font-size: 2rem;
+}
